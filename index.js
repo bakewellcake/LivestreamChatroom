@@ -71,7 +71,7 @@ app.use(function(error, req, res, next) {
 })
 
 server.listen(4401, function () {
-	console.log('Management server started at port 4401...')
+	console.log('Livestream server started at port 4401...')
 
 	var messages = []
 	var rl = readline.createInterface({

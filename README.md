@@ -1,8 +1,9 @@
 ### Description
 
 Live chatroom with authentication using JWT.
-Server: Node.js
-Client: Vue.js, Vuetify
+
+- Server: Node.js
+- Client: Vue.js, Vuetify
 
 ### Installation
 
