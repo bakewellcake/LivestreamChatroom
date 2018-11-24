@@ -4,6 +4,7 @@ Live chatroom with authentication using JWT.
 
 - Server: Node.js
 - Client: Vue.js, Vuetify
+- Database: Postgres
 
 ### Installation
 
@@ -23,9 +24,9 @@ create table livestream.history (
 	id serial not null,
 	user_id int not null,
 	message varchar(4096) not null,
-    created_datetime timestamp not null,
-    CONSTRAINT history_pkey PRIMARY KEY (id),
-    CONSTRAINT history_user_id FOREIGN KEY (user_id)
+	created_datetime timestamp not null,
+	CONSTRAINT history_pkey PRIMARY KEY (id),
+	CONSTRAINT history_user_id FOREIGN KEY (user_id)
         REFERENCES livestream.user (id) MATCH SIMPLE
         ON UPDATE CASCADE
         ON DELETE CASCADE	
